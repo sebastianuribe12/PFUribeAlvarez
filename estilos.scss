@@ -8,6 +8,7 @@ font-family: 'Roboto', sans-serif;
 /*
 Comienza el header
 */
+
 $font1: 'Open Sans', sans-serif;
 $font2: 'Roboto', sans-serif;
 $font3: 'Barlow Condensed', sans-serif;
@@ -15,7 +16,6 @@ $color1: rgb(36, 223, 223);
 $color2: rgb(255, 255, 255);
 $color3: rgba(3, 3, 3, 0.959);
 $color4: rgb(226, 2, 215);
-
 
 
 * {
@@ -43,6 +43,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-image: url(../img/headergradientSINicon.png);
+    
 }
 
 header img {
@@ -60,11 +61,14 @@ header img {
     display: inline-block;
     text-decoration: none;
     color: $color2;
-    padding-right: 30px;
+    padding-right: 10px;
+    transition: all 1s;
 }
 
 .navbar a:hover {
+    border-radius: 25px;
     background-color: $color1;
+    padding-right: 5px;
 }
 
 /*
@@ -78,7 +82,6 @@ main {
     grid-auto-rows: 2;
     background-color: $color3;
 }
-
 
 
 .carousel-inner {
@@ -110,18 +113,55 @@ main {
     text-align: center;
     padding: 20PX;
 }
-
+.know{
+    max-height: 100px;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: all 0,9s;
+}
+.know h2{
+    width: 300px;
+    font-family: $font2;
+    font-size: 40px;
+    color: $color2;
+    padding: 30px;
+    background-color: $color4;
+    border-radius: 50px;
+}
+h2:hover{
+    width: 350px;
+    
+}
 .main4 {
-    height: auto;
-    width: fit-content;
-
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,(100%)/4);
+    grid-template-rows: 1fr;
+    
 }
 
 .container-fluid {
     min-height: 250px;
     padding-top: 30px;
 }
-
+.foto{
+    background-image: url(img/img1.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0,9s;
+}
+.foto:hover{
+    background-size: 35%;
+}
+@for $i from 1 through 4{
+    .foto#{$i} {       
+        background-image: url(img/img#{$i}.png);
+    }
+}
 
 /*
 Comienza el Footer
