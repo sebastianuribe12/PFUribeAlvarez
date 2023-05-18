@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap');
+$font1: 'Open Sans', sans-serif;
+$font2: 'Roboto', sans-serif;
+$font3: 'Barlow Condensed', sans-serif;
+$color1: rgb(36, 223, 223);
+$color2: rgb(255, 255, 255);
+$color3: rgba(3, 3, 3, 0.959);
+$color4: rgb(226, 2, 215);
+
+.port {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
