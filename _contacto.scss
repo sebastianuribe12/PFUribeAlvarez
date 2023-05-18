@@ -1,21 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,700&display=swap');
-$font1: 'Open Sans', sans-serif;
-$font2: 'Roboto', sans-serif;
-$font3: 'Barlow Condensed', sans-serif;
-$color1: rgb(36, 223, 223);
-$color2: rgb(255, 255, 255);
-$color3: rgba(3, 3, 3, 0.959);
-$color4: rgb(226, 2, 215);
 
 .contact {
     color: $color2;
     width: 100%;
-    min-height: 400px;
-    font-family: $font2;
+    min-height: 500px;
+    font-family: $font1;
     font-size: 15px;
     color: $font2;
     padding: 100px;
     text-align: left;
+    h2:hover{
+        font-size: 30px;
+    }
 }
 
 .qr {
@@ -32,16 +27,21 @@ $color4: rgb(226, 2, 215);
 }
 
 .follow {
-    color: $color2;
+    
+    font-family: $font2;
+    font-size: 25px;
+    color:$color2;
+    margin: 10px;
+    text-align: center;
+    @extend .fondo;
     width: 100%;
     height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-size: large;
-    color:$color2;
-    margin: px;
-    text-align: center;
-}
-
-.follow a {
-    font-size: 60px;
+    a {
+        font-size: 60px;
+    }
+    a:hover{
+        color: $color2;
+        font-size: 80px;
+    }
+    
 }
