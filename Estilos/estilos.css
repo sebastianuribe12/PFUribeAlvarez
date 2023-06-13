@@ -161,19 +161,19 @@ main {
 }
 
 .foto1 {
-  background-image: url(img/img1.png);
+  background-image: url(../img/img1.png);
 }
 
 .foto2 {
-  background-image: url(img/img2.png);
+  background-image: url(../img/img2.png);
 }
 
 .foto3 {
-  background-image: url(img/img3.png);
+  background-image: url(../img/img3.png);
 }
 
 .foto4 {
-  background-image: url(img/img4.png);
+  background-image: url(../img/img4.png);
 }
 
 /*
